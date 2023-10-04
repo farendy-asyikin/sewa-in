@@ -1,7 +1,6 @@
 package models
 
 import (
-	"gorm.io/gorm"
 	"time"
 )
 
@@ -16,5 +15,5 @@ type User struct {
 	IsActive     bool
 	CreatedAt    time.Time
 	UpdateAt     time.Time
-	DeleteAt     gorm.DeletedAt
+	DeleteAt     time.Time
 }
