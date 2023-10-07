@@ -1,7 +1,7 @@
 package models
 
 type TransactionHistory struct {
-	ID             string `gorm:"size:36;not null;uniqueIndex;primary_key"`
-	transaction_id string `gorm:"size:100;not null"`
-	is_success     bool   `gorm:"not null"`
+	ID            string `gorm:"size:36;not null;uniqueIndex;primary_key"`
+	TransactionId string `gorm:"size:100;not null"`
+	IsSuccess     bool   `gorm:"not null"`
 }
