@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"sewa-in/app/database/seeders"
 )
 
 type Server struct {
@@ -37,6 +38,7 @@ func (server *Server) Initialize(appConfig AppConfig, dbConfig DBConfig) {
 
 	server.initializeDB(dbConfig)
 	server.initializeRoutes()
+	seeders.DBSeed(server.DB)
 }
 
 func (server *Server) Run(addr string) {
