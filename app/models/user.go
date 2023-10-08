@@ -12,7 +12,7 @@ type User struct {
 	Phone        string `gorm:"size:100;not null;uniqueIndex"`
 	Email        string `gorm:"size:100;not null;uniqueIndex"`
 	Gender       string `gorm:"size:100;not null"`
-	IsActive     bool
+	IsActive     bool   `gorm:"default:true"`
 	CreatedAt    time.Time
 	UpdateAt     time.Time
 	DeleteAt     time.Time

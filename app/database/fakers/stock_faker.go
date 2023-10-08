@@ -14,7 +14,7 @@ func StockFaker(db *gorm.DB) *models.Stock {
 		ItemType:          "Motor Cycle",
 		ItemBrand:         "Honda",
 		ItemSpesification: "98cc, SOHC 2 Valve",
-		IsActive:          false,
+		IsActive:          true,
 		CreatedAt:         time.Time{},
 		UpdatedAt:         time.Time{},
 		DeletedAt:         time.Time{},
